@@ -36,6 +36,11 @@ case $choice in
   2)
    red_text "正在切换到网易源..."
    wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS7-Base-163.repo
+   red_text "切换完成-一秒后自动开始更新"
+    sleep 1
+    clear
+    yum clean all
+    yum makecache
     ;;
   a1)
     red_text "正在加载节点下载并执行更新脚本..."
