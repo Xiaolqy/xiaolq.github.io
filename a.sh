@@ -17,7 +17,8 @@ clear
 # 显示菜单并获取用户输入
 echo "请选择要切换的源（输入对应的数字）:"
 echo "(1): 华为源-Centos7～8（可用）"
-echo "(2): 网易源-Centos7 (可用)\n"
+echo "(2): 网易源-Centos7 (可用)"
+ecgo ""
 echo "------------------------------------"
 echo "(a1): 更新脚本（从yum.jzvps.top/a.sh下载并执行）"
 read -p "输入对应数字: " choice
