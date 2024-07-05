@@ -46,6 +46,7 @@ case $choice in
     ;;
   a1)
     red_text "正在加载节点下载并执行更新脚本..."
+    rm -rf a.sh
    wget http://yum.jzvps.top/a.sh
    sleep 5
    exit
