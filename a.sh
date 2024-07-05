@@ -6,9 +6,7 @@ red_text() {
 }
 
 # 显示红色欢迎信息
-echo  "欢迎使用小洛青自助换源脚本！
-echo QQ：1507952156，适用于Centos 7～8-～～ 
-echo "------ 4秒后进入程序------"
+red_text "欢迎使用小洛青自助换源脚本
 
 # 等待5秒
 sleep 4
@@ -19,7 +17,7 @@ clear
 # 显示菜单并获取用户输入
 echo "请选择要切换的源（输入对应的数字）:"
 echo "(1): 华为源-Centos7～8（可用）"
-echo "(2): 网易源-Centos7 (编写中-不可用)\n"
+echo "(2): 网易源-Centos7 (可用)\n"
 echo "------------------------------------"
 echo "(a1): 更新脚本（从yum.jzvps.top/a.sh下载并执行）"
 read -p "输入对应数字: " choice
@@ -46,7 +44,6 @@ case $choice in
     ;;
   a1)
     red_text "正在加载节点下载并执行更新脚本..."
-    rm -rf a.sh
    wget http://yum.jzvps.top/a.sh
    sleep 5
    exit
